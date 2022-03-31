@@ -1,4 +1,9 @@
 $(function(){
+
+    AOS.init({
+        duration: 1400,
+    });
+
     $('.fairy-tail__slider, .our-trip__slider').slick({
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="./images/slider/prev_btn.png" alt=""></button>',
 
@@ -29,6 +34,8 @@ $(function(){
 
         $(`body,html`).animate({ scrollTop: top}, 1500);
     });
+
+    AOS.refresh();
 });
 
 
